@@ -1,0 +1,222 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+
+body {
+  font-family: "Space Mono", monospace;
+  background-color: #0c0f0a;
+  color: gray;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.wrapper-users {
+  padding-left: 20px;
+}
+
+.wrapper-users,
+.wrapper-posts,
+.wrapper-comments {
+  padding-left: 20px;
+  margin-top: 0;
+  list-style: none;
+  width: 550px;
+  height: 700px;
+  overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: blue;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a3cef1;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track-piece{
+   background-color: #128eac;
+}
+
+.wrapper-users__item::before {
+  content: "";
+  width: 5px;
+  height: 200px;
+  display: inline-block;
+  margin-left: -15px;
+  margin-bottom: -177px;
+  background-color:aqua;
+  border-radius: 10px;
+}
+
+.posts-list__item,
+.comments-list__item {
+  background-color: #1d2637;
+  margin-bottom: 10px;
+  padding: 10px 10px;
+}
+
+.wrapper-users__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.users__text {
+  background-color:  #001d3d;
+  color: wheat;
+  display: inline-block;
+  margin-bottom: 0;
+  padding: 7px 10px;
+  font-size: 20px;
+}
+
+.users-name {
+  color: skyblue;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-right: 0;
+  font-size: 30px;
+}
+
+.users-id {
+  color:skyblue;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.wrapper-users__address {
+  color: #fdf0d5;
+  padding-left: 10px;
+  margin-bottom: 7px;
+  font-style: inherit;
+}
+
+.users-title,
+.users-phrase {
+  display: block;
+}
+
+.users-company {
+  color: #7bdff2;
+}
+
+.users-package {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.users-phone {
+  color: #bbd0ff;
+}
+
+.users-phone::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background: url("../images/phone\ \(1\).svg") no-repeat center center;
+  background-color: #fff;
+  background-size: contain;
+}
+
+.users-geo,
+.users-website {
+  color: #e7e7e6;
+}
+
+.users-geo::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  background: url("../images/geo\ \(2\).svg") no-repeat center center;
+  background-color: #e7e7e6;
+  background-size: contain;
+}
+
+.users-website::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  margin-right: 3px;
+  display: inline-block;
+  background: url("../images/website\ \(1\).svg") no-repeat center center;
+  background-color: #fff;
+  background-size: contain;
+}
+
+.users-email {
+  color: #1e96fc;
+  display: block;
+  margin-right: 5px;
+}
+
+.users-email::before {
+  content: "";
+  width: 20px;
+  height: 16px;
+  display: inline-block;
+  margin-right: 3px;
+  margin-bottom: -3px;
+  background: url("../images/email.svg") no-repeat center center;
+  background-size: contain;
+}
+
+.posts-title {
+  margin-top: 0;
+  margin-bottom: 7px;
+  padding: 0;
+  color: skyblue;
+}
+
+.posts-body {
+  margin-top: 0;
+  color: #e7ecef;
+}
+
+.comments-name {
+  margin-bottom: 5px;
+  color: #aed9e0;
+}
+
+.comments-email {
+  color: yellow;
+}
+
+.comments-email::before {
+  content: "";
+  width: 20px;
+  height: 16px;
+  display: inline-block;
+  margin-bottom: -3px;
+  margin-right: 3px;
+  background: url("../images/email.svg") no-repeat center center;
+  background-size: contain;
+}
+
+.comments-body {
+  margin-top: 5px;
+  color: #cddafd;
+}
+
+.loading__img {
+   position: fixed;
+   top: 35%;
+   left: 45%;
+ }
